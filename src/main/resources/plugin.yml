@@ -1,0 +1,10 @@
+name: paweU-Safes
+version: @version@
+main: pl.paweu.safes.SafesPlugin
+api-version: 1.13
+authors: [paweU]
+description: Plugin wprowadzajacy na serwer sejfy
+website: www.paweudev.eu
+commands:
+  sejf:
+  opis:

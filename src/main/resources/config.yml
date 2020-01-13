@@ -1,0 +1,41 @@
+mysql:
+  host: 'host'
+  port: 3306
+  database: 'dbname'
+  username: 'username'
+  password: 'password'
+messages:
+  safeCommandUsage: '&4&lBlad: &cPoprawne uzycie: &6/sejf <sejf/lom> <nick/all> <ilosc>'
+  loreCommandUsage: '&4&lBlad: &cPoprawne uzycie: &6/opis <tresc>'
+  integerError: '&4&lBlad: &cPodana wartosc nie jest liczba!'
+  playerError: '&4&lBlad: &cPodany gracz jest &4offline'
+  firstJoinMessage: '&8%> &7Wszedles &cpierwszy &7raz na serwer i otrzymales &6sejf&7!'
+  givenSafeMessageForOnlinePlayers: '&8%> &7Dales wszystkim graczom &cx{amount} &7sejfow'
+  givenCrowbarMessageForOnlinePlayers: '&8%> &7Dales wszystkim graczom &cx{amount} &7lomow'
+  givenSafeMessageForSpecificPlayer: '&8%> &7Dales graczowi &6{player} &cx{amount} &7sejfow'
+  givenCrowbarMessageForSpecificPlayer: '&8%> &7Dales graczowi &6{player} &cx{amount} &7lomow'
+  tookOverTheSafe: '&8%> &7Pomyslnie przejales sejf gracza &6{player}'
+  youAreOwnerError: '&4&lBlad: &cNie mozesz przejac swojego sejfu!'
+  youAreNotTheOwnerError: '&4&lBlad: &cTen sejf nie nalezy do Ciebie!'
+  isNotSafeItem: '&4&lBlad: &cPrzedmiot w rece nie jest sejfem!'
+  loreChangeMessage: '&8%> &7Pomyslnie zmieniles opis sejfu na &6{lore}'
+  loreLengthError: '&4&lBlad: &cOpis moze miec od &62 &cdo &616 &cznakow'
+items:
+  safe:
+    name: '&cSejf id: &6{id}'
+    lore:
+      - ' '
+      - '&8%O &7Wlasciciel: &6{owner}'
+      - ' '
+      - '&8%O &7Opis: &c{lore}'
+      - ' '
+  crowbar:
+    name: '&c&lLOM'
+    lore:
+      - ' '
+      - '&8%> &7Kliknij &6&lLPM &7aby przechwycic sejf!'
+      - ' '
+values:
+  firstJoinSafeAmount: 1
+  safeSize: 54
+  ## safeSize lepiej nie zmniejszac gdy ktos ich juz uzywal, bo poznikaja itemy,  chyba , ze tylko zwiekszamy rozmiar sejfu, to okej :)
